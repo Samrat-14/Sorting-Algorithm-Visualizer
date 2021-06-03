@@ -102,6 +102,12 @@ header{
     justify-content: center;
     align-items: flex-end;
 }
+.intro{
+    position: relative;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #16a853;
+}
 
 .item{
     background: #1691e4;
