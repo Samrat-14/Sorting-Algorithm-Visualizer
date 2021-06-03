@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+:root{
+    --cyan: #1691e4;
+    --blue: #5a0fbb;
+    --green: #06af5a;
+    --red: #f73614;
+    --yellow: #f5e341;
+    --orange: #f09508;
+    --pink: #bd5dd3;
+    --lightgreen: #64ce0e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2e2f31;
+}
+header{
+    position: relative;
+    background: #232427;
+    width: 100vw;
+    height: 15vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.customize{
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.effect{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.3),
+                -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.buttons{
+    background: #2a2b2f;
+    padding: 1px;
+    border: 2px solid #059767;
+    letter-spacing: 2px;
+    color: #65c2a3;
+    cursor: pointer;
+}
+.disable{
+    border: 2px solid #e40d29;
+    color: #dd5e6f;
+    cursor: initial;
+}
+.text{
+    margin-top: 5px;
+    font-size: 16px;
+    user-select: none;
+    color: #afecd8;
+}
+
+#generate{
+    width: 10%;
+}
+
+#scroll{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    width: 90%;
+    height: 50px;
+}
+
+#algo{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.sort_algo{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas{
+    margin: 10px;
+    width: 90vw;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item{
+    background: #1691e4;
+    /* background: #bd5d1e; */
+    border: 1px solid #000;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+@media (max-width: 1000px){
+    header{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 25vh;
+    }
+    .customize{
+        height: 45%;
+    }
+    #generate{
+        width: 30%;
+    }
+    #scroll{
+        width: 60%;
+    }
+    #algo{
+        width: 100%;
+    }
+    .buttons{
+        letter-spacing: 0;
+    }
+}
